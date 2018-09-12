@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/button_dialog"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.tabqydriver.customtext.CustomTextView
+            android:id="@+id/dialog_confirmation_tv_confirm"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:text="@string/startpickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.tabqydriver.customtext.CustomTextView
+                android:id="@+id/dialog_confirmation_tv_no"
+                android:text="No"
+                android:layout_weight="1"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_12"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/padding_20"
+                android:paddingRight="@dimen/padding_20"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_black_dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextView
+                android:id="@+id/dialog_confirmation_tv_yes"
+                android:text="Yes"
+                android:layout_weight="1"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_12"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/padding_20"
+                android:paddingRight="@dimen/padding_20"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_pink_dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>

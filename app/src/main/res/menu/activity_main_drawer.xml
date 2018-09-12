@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--
+    <group
+        android:id="@+id/first"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/left_nav_hourglass"
+            android:iconTint="@color/availability"
+            android:icon="@drawable/ic_hourglass"
+            android:title="Set Availability"
+            />
+        <item
+            android:id="@+id/nav_item1"
+            android:title="item1"
+            app:actionLayout="@layout/layout_switch"
+            />
+    </group>
+-->
+<group
+    android:id="@+id/first"
+    android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_hourglass"
+        android:title="Set availabily"/>
+        <!--app:actionLayout="@layout/home_layout"-->
+</group>
+
+
+    <group
+        android:id="@+id/second"
+        android:checkableBehavior="single">
+        <item
+            android:iconTint="@color/password"
+            android:iconTintMode="add"
+            android:id="@+id/left_nav_padlock"
+            android:icon="@drawable/ic_padlock_closed"
+            android:title="Change Password" />
+    </group>
+
+
+    <group
+        android:id="@+id/fourth"
+        android:checkableBehavior="single">
+    <item
+                android:id="@+id/left_nav_earn"
+                android:icon="@drawable/ic_earn"
+                android:title="My Earnings" />
+    </group>
+
+
+    <group
+        android:id="@+id/fifth"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/left_nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+
+
+    </menu>
+
+
+
+

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Login">
+
+    <ImageView
+        android:background="@drawable/background_login"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <!--<ImageView
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_20"
+            android:src="@drawable/ic_arrow_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+    </ImageView>
+
+<LinearLayout
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <com.tabqydriver.customtext.CustomTextViewSemiBold
+        android:text="@string/loginusing"
+        android:textSize="@dimen/text_14"
+        android:textStyle="bold"
+        android:textColor="@color/text_light_black"
+        android:layout_margin="@dimen/margin_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:paddingRight="@dimen/padding_15"
+        android:paddingLeft="@dimen/padding_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/activity_login_iv_email"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_envelope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.tabqydriver.customtext.CustomTextView
+            android:text="@string/email"
+            android:paddingLeft="@dimen/padding_10"
+            android:textColor="@color/text_light_black"
+            android:id="@+id/activity_login_tv_email"
+            android:layout_toRightOf="@+id/activity_login_iv_email"
+            android:textSize="@dimen/text_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="@string/laura"
+            android:textColorHint="@color/text_light_black"
+            android:paddingLeft="@dimen/padding_10"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/text_12"
+            android:background="@null"
+            android:id="@+id/activity_login_et_email"
+            android:imeOptions="actionDone"
+            android:layout_toRightOf="@+id/activity_login_iv_email"
+            android:layout_below="@+id/activity_login_tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_below="@+id/activity_login_et_email"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/view_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_15"
+        android:paddingRight="@dimen/padding_15"
+        android:paddingLeft="@dimen/padding_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/activity_login_iv_lock"
+            android:src="@drawable/ic_padlock"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.tabqydriver.customtext.CustomTextView
+            android:text="@string/password"
+            android:paddingLeft="@dimen/padding_10"
+            android:textColor="@color/text_light_black"
+            android:id="@+id/activity_login_tv_password"
+            android:layout_toRightOf="@+id/activity_login_iv_lock"
+            android:textSize="@dimen/text_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="....."
+            android:textColorHint="@color/text_light_black"
+            android:inputType="textPassword"
+            android:textSize="@dimen/text_12"
+            android:imeOptions="actionDone"
+            android:scrollbars="vertical"
+            android:paddingLeft="@dimen/padding_10"
+            android:scrollbarStyle="insideInset"
+            android:overScrollMode="always"
+            android:background="@null"
+            android:singleLine="true"
+            android:id="@+id/activity_login_tv_dot_password"
+            android:layout_toRightOf="@+id/activity_login_iv_lock"
+            android:layout_below="@+id/activity_login_tv_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_below="@+id/activity_login_tv_dot_password"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:background="@color/view_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+    </RelativeLayout>
+            <com.tabqydriver.customtext.CustomTextView
+                android:id="@+id/activity_login_tv_login"
+                android:text="@string/login"
+                android:textColor="@color/text_white"
+                android:background="@drawable/button_pink"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_10"
+                android:padding="@dimen/padding_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextView
+                android:id="@+id/activity_login_tv_forgot_password"
+                android:text="@string/forgot"
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/text_12"
+                android:padding="@dimen/padding_5"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+

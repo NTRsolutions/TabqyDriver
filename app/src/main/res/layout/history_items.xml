@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_weight=".50"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/frag_history_iv_cx"
+                android:padding="@dimen/padding_5"
+                android:src="@drawable/customer_img"
+                android:layout_width="65dp"
+                android:layout_height="80dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <com.tabqydriver.customtext.CustomTextViewBold
+                android:id="@+id/earning_items_orderno"
+                android:text="#65656565"
+                android:textSize="@dimen/text_14"
+                android:textColor="@color/GREEN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/ic_user"
+                    android:padding="@dimen/padding_3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <com.tabqydriver.customtext.CustomTextView
+                    android:text="Marwin Simms"
+                    android:textColor="@color/text_light_black"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <com.tabqydriver.customtext.CustomTextViewSemiBold
+                android:text="Restaurant details : "
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/text_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:padding="@dimen/padding_3"
+                    android:src="@drawable/ic_dish"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <com.tabqydriver.customtext.CustomTextView
+                    android:text="Dao Xiang Restaurant"
+                    android:textSize="@dimen/text_12"
+                    android:textColor="@color/text_light_black"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:padding="@dimen/padding_3"
+                    android:src="@drawable/ic_wallet"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <com.tabqydriver.customtext.CustomTextView
+                    android:text="Payment by Cod"
+                    android:textSize="@dimen/text_12"
+                    android:textColor="@color/text_light_black"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".90"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <com.tabqydriver.customtext.CustomTextView
+                android:id="@+id/earning_items_tv_payment_status"
+                android:text="Payment status"
+                android:textSize="@dimen/text_10"
+                android:visibility="invisible"
+                android:textColor="@color/text_light_black"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextView
+                android:id="@+id/earning_items_payment_status"
+                android:layout_gravity="end"
+                android:background="@drawable/dotted"
+                android:padding="@dimen/padding_5"
+                android:visibility="invisible"
+                android:text="Collected from customer"
+                android:textSize="@dimen/text_8"
+                android:textColor="@color/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextView
+                android:text="Amount value"
+                android:layout_gravity="end"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/margin_12"
+                android:textSize="@dimen/text_10"
+                android:textColor="@color/text_light_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextViewBold
+                android:id="@+id/earning_items_payment_amount"
+                android:layout_gravity="end"
+                android:text="SAR 500.00"
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/GREEN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/view_2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"></View>
+
+</LinearLayout>

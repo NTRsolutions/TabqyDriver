@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/text_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Signature">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/frag_signature_okcancel_lin"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.tabqydriver.customtext.CustomTextView
+                android:id="@+id/frag_signature_tv_cancel"
+                android:text="Cancel"
+                android:textColor="@color/text_white"
+                android:gravity="center"
+                android:background="@drawable/button_gray_less_radius"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_14"
+                android:layout_width="0dp"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10"/>
+            <com.tabqydriver.customtext.CustomTextView
+                android:text="Ok"
+                android:id="@+id/frag_signature_tv_ok"
+                android:textSize="@dimen/text_14"
+                android:gravity="center"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:background="@drawable/button_pink"
+                android:textColor="@color/text_white"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <RelativeLayout
+        android:background="@color/main_image_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha=".8">
+        <ImageView
+            android:background="@drawable/home_main"
+            android:layout_width="match_parent"
+            android:layout_height="160dp" />
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.tabqydriver.customtext.CustomTextViewBold
+                android:id="@+id/frag_signature_tv_cx_name"
+                android:text="Marwin simms"
+                android:textColor="@color/text_white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/text_18"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextView
+                android:id="@+id/frag_signature_order_number"
+                android:text="#6464646464"
+                android:textColor="@color/text_white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/frag_signature_main_lin"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:layout_marginTop="135dp"
+            android:gravity="center"
+            android:background="@drawable/button_dialog"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/frag_signature_okcancel_lin">
+            <com.tabqydriver.customtext.CustomTextViewSemiBold
+                android:id="@+id/frag_signature_tv_signature"
+                android:text=""
+                android:layout_marginTop="90dp"
+                android:textColor="@color/text_gray"
+                android:textSize="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>

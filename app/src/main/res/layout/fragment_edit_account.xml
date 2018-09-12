@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.EditAccount">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:id="@+id/frag_profile_lin"
+        android:background="@color/main_image_color"
+        android:padding="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/photo_editprofile"
+                android:src="@drawable/customerimage"
+                android:layout_width="110dp"
+                android:layout_height="110dp" />
+            <ImageView
+                android:id="@+id/frag_edit_profile_img_camera"
+                android:layout_alignRight="@+id/photo_editprofile"
+                android:layout_alignBottom="@+id/photo_editprofile"
+                android:foregroundGravity="center"
+                android:background="@drawable/button_white_solid"
+                android:src="@drawable/ic_photo_camera"
+                android:paddingTop="5dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <com.tabqydriver.customtext.CustomTextViewSemiBold
+            android:text="@string/logged"
+            android:gravity="center"
+            android:textColor="@color/text_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_14"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <com.tabqydriver.customtext.CustomTextViewSemiBold
+            android:text="@string/jane"
+            android:textSize="@dimen/text_18"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/text_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/profile"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.tabqydriver.customtext.CustomTextView
+            android:id="@+id/number"
+            android:text="@string/phone"
+            android:textColor="@color/text_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/editprofile_number"
+            android:hint="+91-7988961496"
+            android:layout_below="@+id/number"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"/>
+        <com.tabqydriver.customtext.CustomTextView
+            android:id="@+id/email"
+            android:text="@string/email"
+            android:layout_below="@+id/editprofile_number"
+            android:textColor="@color/text_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/editprofile_email"
+            android:hint="Janedoe@gmail.com"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:layout_below="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"/>
+        <Button
+            android:layout_gravity="bottom"
+            android:id="@+id/frag_editprofile_tv_update"
+            android:text="@string/update"
+            android:textColor="@color/text_white"
+            android:background="@drawable/button_pink"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="05dp"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"/>
+    </RelativeLayout> />
+</LinearLayout>

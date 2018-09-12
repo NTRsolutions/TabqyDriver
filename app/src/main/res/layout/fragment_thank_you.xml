@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/text_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ThankYou">
+
+
+
+        <RelativeLayout
+            android:background="@color/main_image_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha=".8">
+            <ImageView
+                android:background="@drawable/home_main"
+                android:layout_width="match_parent"
+                android:layout_height="160dp" />
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.tabqydriver.customtext.CustomTextViewBold
+                    android:id="@+id/order_detail"
+                    android:text="Marwin simms"
+                    android:textColor="@color/text_white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_18"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.tabqydriver.customtext.CustomTextView
+                    android:id="@+id/order_number"
+                    android:text="#6464646464"
+                    android:textColor="@color/text_white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/frag_order_main_lin"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:layout_marginTop="135dp"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:gravity="center"
+            android:background="@drawable/button_dialog"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/ic_vector_smart_object1"
+                android:layout_gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <com.tabqydriver.customtext.CustomTextViewBold
+                android:text="THANK YOU"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:textColor="@color/text_pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextView
+                android:text="Order delivered successfully"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@drawable/ic_yes"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+        </LinearLayout>
+
+    </RelativeLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activities.MainActivity">
+
+    <!--<RelativeLayout
+        android:id="@+id/layoutTop"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+    </RelativeLayout>-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10"
+        android:background="@color/text_white"
+        android:layout_marginTop="@dimen/margin_30"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginLeft="@dimen/margin_15">
+
+        <com.tabqydriver.customtext.CustomTextViewSemiBold
+            android:id="@+id/dialog_payment"
+            android:layout_marginTop="35dp"
+            android:text="Choose your payment option"
+            android:textColor="@color/text_light_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.tabqydriver.customtext.CustomTextView
+            android:id="@+id/dialog_payment_tv_order"
+            android:visibility="invisible"
+            android:textColor="@color/text_light_black"
+            android:text="#656565656"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/dialog_payment_rb_cash"
+                android:layout_weight="1"
+                android:text="Cash"
+                android:textSize="@dimen/text_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></RadioButton>
+            <RadioButton
+                android:id="@+id/dialog_payment_rb_card"
+                android:layout_weight="1"
+                android:text="Card"
+                android:checked="true"
+                android:textSize="@dimen/text_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+        <com.tabqydriver.customtext.CustomTextView
+            android:text="SAR 100"
+            android:textColor="@color/text_light_black"
+            android:visibility="invisible"
+            android:id="@+id/dialog_payment_tv_charges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/dialog_payment_spinner"
+            android:layout_marginTop="@dimen/margin_5"
+            android:saveEnabled="false"
+            android:background="@drawable/button_gray_less_radius"
+            android:paddingTop="@dimen/padding_15"
+            android:paddingBottom="@dimen/padding_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"></Spinner>
+        <EditText
+            android:id="@+id/dialog_payment_et"
+            android:hint="Transaction no."
+            android:textColorHint="@color/text_light_black"
+            android:textSize="@dimen/text_14"
+            android:imeOptions="actionDone"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="insideInset"
+            android:background="@drawable/button_gray_less_radius"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/dialog_payment_tv_ok"
+            android:text="Ok"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_12"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:background="@drawable/button_pink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_dark_pink_round"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wallet_2"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_dark_pink_round"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margin_15">
+
+        <com.tabqydriver.customtext.CustomTextView
+            android:id="@+id/dialog_payment_tv_cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textColor="@color/text_white"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+
+
+    <!--
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="170dp"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/button_dialog"
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.tabqydriver.customtext.CustomTextViewSemiBold
+                    android:id="@+id/dialog_not_delivered_tv_reason"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginBottom="@dimen/margin_20"
+                    android:text="Choose your payment option"
+                    android:textColor="@color/text_light_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/dialog_payment_rb_cash"
+                        android:layout_weight="1"
+                        android:text="Cash"
+                        android:textSize="@dimen/text_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></RadioButton>
+                    <RadioButton
+                        android:id="@+id/dialog_payment_rb_card"
+                        android:layout_weight="1"
+                        android:text="Card"
+                        android:textSize="@dimen/text_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+                <Spinner
+                    android:id="@+id/dialog_payment_spinner"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:background="@drawable/button_gray_less_radius"
+                    android:paddingTop="@dimen/padding_15"
+                    android:paddingBottom="@dimen/padding_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"></Spinner>
+                <EditText
+                    android:hint="Transaction no."
+                    android:textColorHint="@color/text_light_black"
+                    android:textSize="@dimen/text_14"
+                    android:imeOptions="actionDone"
+                    android:background="@drawable/button_gray_less_radius"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/dialog_payment_tv_ok"
+                    android:text="Ok"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_12"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:background="@drawable/button_pink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    -->
+
+
+    <!--    <TextView
+            android:id="@+id/cross"
+            android:text="X"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/button_dark_pink_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_dark_pink_round"
+            android:id="@+id/overlapImage"
+            android:padding="15dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="100dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_wallet_2" />-->
+</RelativeLayout>
+
+

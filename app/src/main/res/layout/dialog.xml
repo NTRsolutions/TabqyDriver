@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/button_dialog"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/home_frag_food"
+            android:layout_width="110dp"
+            android:layout_height="110dp" />
+
+        <com.tabqydriver.customtext.CustomTextViewSemiBold
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:text="NEW ORDER #2154"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_14"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/text_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/ic_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--<com.tabqydriver.customtext.CustomTextView
+                android:text="Customer:"
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/text_light_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />-->
+            <com.tabqydriver.customtext.CustomTextView
+                android:layout_alignParentRight="true"
+                android:text="John walker"
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/text_light_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--<com.tabqydriver.customtext.CustomTextView
+                android:text="Restaurant"
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/text_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />-->
+            <ImageView
+                android:src="@drawable/ic_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextView
+                android:layout_alignParentRight="true"
+                android:text="Ramada Plaza"
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/text_light_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.tabqydriver.customtext.CustomTextView
+                android:text="Payment"
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/text_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextView
+                android:layout_alignParentRight="true"
+                android:text="PAID/COD"
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/text_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.tabqydriver.customtext.CustomTextView
+                android:text="To Restaurant"
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/text_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextView
+                android:layout_alignParentRight="true"
+                android:text="12.2Km"
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/text_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.tabqydriver.customtext.CustomTextView
+                android:text="Restaurant to customer"
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/text_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextView
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/text_12"
+                android:text="3.12Km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.tabqydriver.customtext.CustomTextView
+                android:id="@+id/dialog_tv_decline"
+                android:text="Decline"
+                android:layout_weight="1"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_12"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_black_dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextView
+                android:id="@+id/dialog_tv_accept"
+                android:text="Accept"
+                android:layout_weight="1"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_12"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_pink_dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.tabqydriver.customtext.CustomTextViewSemiBold
+        android:id="@+id/dialog_tv_cross"
+        android:text="X"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_16"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_dark_pink_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

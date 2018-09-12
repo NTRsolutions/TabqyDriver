@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimary">#B83480</color>
+<color name="colorPrimaryDark">#9F0660</color>
+<color name="colorAccent">#4F4F4F</color>
+
+<color name="text_white">#ffffff</color>
+<color name="text_black">#252525</color>
+<color name="text_pink">#B83480</color>
+<color name="text_light_black">#4F4F4F</color>
+    <color name="text_gray">#B7B7B7</color>
+    <color name="orange">#D58548</color>
+
+<color name="main_image_color">#ae2d78</color>
+
+    <color name="bnv_background">#F2F2F2</color>
+    <color name="bnv_icon">#8A8A8A</color>
+
+<color name="back_white">#ffffff</color>
+
+<color name="view_1">#CCCCCC</color>
+    <color name="view_2">#FFDFDDDD</color>
+    <color name="view_3">#ae2d78</color>
+
+    <color name="green">#55A302</color>
+    <color name="GREEN">#32C401</color>
+
+
+    ///side-menu///
+    <color name="availability">#00A650</color>
+    <color name="password">#B83480</color>
+    <color name="notification">#5674BA</color>
+    <color name="earning">#AF4142</color>
+    <color name="logout">#A67C52</color>
+</resources>

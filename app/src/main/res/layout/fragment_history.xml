@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.History">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/main_image_color"
+                android:alpha=".8">
+                <ImageView
+                    android:background="@drawable/home_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.tabqydriver.customtext.CustomTextViewBold
+                    android:text="My History"
+                    android:textSize="@dimen/text_16"
+                    android:layout_marginTop="80dp"
+                    android:textColor="@color/text_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.tabqydriver.customtext.CustomTextView
+                    android:text="SAR 500.00"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_12"
+                    android:textColor="@color/text_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    <LinearLayout
+        android:padding="@dimen/padding_10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--
+    <com.tabqydriver.customtext.CustomTextView
+        android:text="Search : "
+        android:textColor="@color/text_light_black"
+        android:textSize="@dimen/text_16"
+        android:paddingRight="@dimen/padding_10"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+-->
+        <com.tabqydriver.customtext.CustomTextViewSemiBold
+            android:text="From : "
+            android:paddingRight="@dimen/padding_5"
+            android:textColor="@color/text_light_black"
+            android:textSize="@dimen/text_12"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/frag_history_lin_calender1"
+            android:layout_marginRight="@dimen/margin_5"
+            android:orientation="horizontal"
+            android:background="@drawable/background_calender"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content">
+            <com.tabqydriver.customtext.CustomTextView
+                android:padding="8dp"
+                android:id="@+id/frag_history_tv_calender1"
+                android:text="Date"
+                android:textSize="12sp"
+                android:textColor="@color/text_light_black"
+                android:layout_weight="0.60"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_alignLeft="@+id/ms_1_calender"
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@color/view_3"></View>
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/frag_history_calender1"
+                android:layout_weight=".20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_calendar" />
+        </LinearLayout>
+        <com.tabqydriver.customtext.CustomTextViewSemiBold
+            android:text="To : "
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_5"
+            android:layout_gravity="center"
+            android:textColor="@color/text_light_black"
+            android:textSize="@dimen/text_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/frag_history_lin_calender2"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/background_calender"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content">
+            <com.tabqydriver.customtext.CustomTextView
+                android:padding="8dp"
+                android:id="@+id/frag_history_tv_calender2"
+                android:text="Date"
+                android:textSize="12sp"
+                android:textColor="@color/text_light_black"
+                android:layout_weight=".60"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_alignLeft="@+id/ms_1_calender"
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="@color/view_3"></View>
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:id="@+id/ms_1_calender"
+                android:layout_weight=".20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_calendar" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.tabqydriver.customtext.CustomTextView
+        android:id="@+id/frag_history_tv_go"
+        android:text="Go"
+        android:textColor="@color/text_white"
+        android:background="@drawable/button_pink"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="@dimen/padding_5"
+        android:paddingBottom="@dimen/padding_5"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:visibility="invisible"
+        android:id="@+id/history_recycler"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

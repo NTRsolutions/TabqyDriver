@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/back_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:paddingTop="@dimen/padding_3"
+        android:paddingBottom="@dimen/padding_3"
+        android:paddingRight="@dimen/padding_10"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/home_frag_items_iv_food"
+        android:src="@drawable/customerimage"
+        android:padding="@dimen/padding_10"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+        <RelativeLayout
+            android:id="@+id/home_frag_items_number"
+            android:layout_toRightOf="@+id/home_frag_items_iv_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.tabqydriver.customtext.CustomTextViewBold
+            android:id="@+id/home_frag_items_order_number"
+            android:text="#656565656"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/text_light_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextView
+                android:id="@+id/customer_name"
+                android:layout_below="@+id/home_frag_items_order_number"
+                android:text="John Walker"
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/text_light_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextView
+                android:layout_below="@+id/customer_name"
+                android:text="9898989898"
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/text_light_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <!--<ImageView
+            android:src="@drawable/ic_time"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/frag_home_items_tv_ago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextView
+                android:id="@+id/frag_home_items_tv_ago"
+                android:text="@string/ago"
+                android:textSize="@dimen/text_10"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_light_black"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />-->
+            <com.tabqydriver.customtext.CustomTextView
+                android:id="@+id/home_frag_items_tv_paid"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="PAID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/home_frag_items_location_lin"
+            android:layout_below="@+id/home_frag_items_number"
+            android:layout_toRightOf="@+id/home_frag_items_iv_food"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/home_frag_iv_location_cx"
+            android:src="@drawable/ic_location_cx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <LinearLayout
+                android:paddingLeft="@dimen/padding_5"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <com.tabqydriver.customtext.CustomTextView
+                android:text="@string/blvd"
+                android:textSize="@dimen/text_12"
+                android:singleLine="true"
+                android:textColor="@color/text_light_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+                <com.tabqydriver.customtext.CustomTextView
+                    android:text="@string/dubai"
+                    android:textColor="@color/text_light_black"
+                    android:textSize="@dimen/text_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/home_frag_items_directions_rel"
+            android:layout_below="@+id/home_frag_items_location_lin"
+            android:layout_toRightOf="@+id/home_frag_items_iv_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/home_frag_items_directions_iv"
+                android:src="@drawable/ic_direction"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextView
+                android:layout_toRightOf="@+id/home_frag_items_directions_iv"
+                android:text="@string/directions"
+                android:paddingLeft="@dimen/padding_5"
+                android:textColor="@color/text_light_black"
+                android:textSize="@dimen/text_12"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.tabqydriver.customtext.CustomTextView
+                android:id="@+id/frag_home_items_tv_accept"
+                android:text="@string/accept"
+                android:layout_margin="@dimen/margin_5"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_10"
+                android:textColor="@color/text_white"
+                android:background="@drawable/button_pink"
+                android:paddingTop="@dimen/padding_5"
+                android:paddingBottom="@dimen/padding_5"
+                android:paddingLeft="@dimen/padding_15"
+                android:paddingRight="@dimen/padding_15"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:background="@color/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+</LinearLayout>
